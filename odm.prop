@@ -3,14 +3,12 @@ ro.config.media_vol_steps=30
 ro.config.vc_call_vol_steps=9
 ro.vendor.audio.sdk.fluencetype=fluence
 
-<<<<<<< HEAD
 # Camera
-vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
-=======
+vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam,ru.andr7e.deviceinfohw
+
 # Display
 persist.sys.sf.color_mode=0
 vendor.display.enable_async_powermode=0
->>>>>>> parent of 10b84bd (sm8250-common: Switch to OSS display stack)
 
 # Graphics
 debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
