@@ -146,4 +146,4 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/sm8250-common/BoardConfigVendor.mk
-#include vendor/oneplus/addons/camera/BoardConfigVendor.mk)
+include vendor/oneplus/camera/BoardConfigVendor.mk
