@@ -1249,6 +1249,19 @@ odm/firmware/tp/21623/FW_FT3658U_SAMSUNG.img|cea1853f2d04b849f10f589452ab56a6d37
 odm/firmware/tp/21623/FW_FT3658U_SAMSUNG_FAE.img|83bd18d436e49749dc9d1cf723fce7e0687b2c8a
 odm/firmware/tp/21623/LIMIT_FT3658U_SAMSUNG.img|15c633d9a18e4028eeb0edf399730b333dbaae8c
 
+# Vibrator
+odm/bin/hw/vendor.oplus.hardware.vibrator-service
+odm/etc/aac_richtap.config
+odm/etc/init/vibrator-default.rc
+odm/etc/vintf/manifest/vibrator-default.xml
+odm/lib/hw/awinic.haptic.effect.so
+odm/lib/libaacvibrator.so
+odm/lib/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so
+odm/lib64/libaacvibrator.so
+odm/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so
+vendor/lib/hw/vibrator.default.so
+vendor/lib64/hw/vibrator.default.so
+
 # Vibrator firmware - OOS
 odm/firmware/100ms_RTP.bin|53d01a8a09986b43ca4c3e706f54b0cef1152a6e
 odm/firmware/120ms_RTP.bin|bd7de4df7e6681b5b7cf9d5a47e49b33d696e3e8
