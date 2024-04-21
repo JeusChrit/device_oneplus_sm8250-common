@@ -79,6 +79,9 @@ debug.hwui.target_cpu_time_percent=20
 # Incremental FS
 ro.incremental.enable=yes
 
+# Media
+vendor.media.omx=0
+
 # Netflix
 ro.netflix.bsp_rev=Q8250-19134-1
 
