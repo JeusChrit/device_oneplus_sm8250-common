@@ -229,6 +229,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# USB
+PRODUCT_HAS_GADGET_HAL := true
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
