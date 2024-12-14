@@ -90,7 +90,7 @@ on early-boot
 on property:vendor.post_boot.parsed=1
     # Configure CPU boost settings
     write /sys/devices/system/cpu/cpu_boost/input_boost_ms 1250
-    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:691200 1:691200 2:691200 3:691200 4:1382400 5:1382400 6:1382400 7:1401600"
+    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:691200 1:691200 2:691200 3:691200 4:1056000 5:1056000 6:1056000 7:1075200"
     write /sys/devices/system/cpu/cpu_boost/sched_boost_on_input 0
     
     # CPUFreq
