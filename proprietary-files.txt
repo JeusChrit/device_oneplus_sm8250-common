@@ -1,7 +1,3 @@
-## All proprietary files from this list, unless pinned and noted otherwise, are
-## from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0. Sections labeled with 'OOS' are
-## on latest OxygenOS which is OnePlus 8 Pro (IN2025_13.1.0.582 (EX01)) at present.
-
 # ADSPRPC - OOS
 vendor/etc/init/vendor.qti.adsprpc-service.rc|20cb0e4f182f64c51c214104487ae4836f04b86e
 
@@ -494,7 +490,6 @@ vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # Connection Security
-vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
@@ -725,23 +720,6 @@ my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/e
 my_product/priv-app/HotwordEnrollmentOKGoogle.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogle.apk|8731f03058b6b32b7f976f49ee9cc947bdacb532
 my_product/priv-app/HotwordEnrollmentXGoogle.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogle.apk|f6657503609b4bb91a9f45ec2e2e659f8f7b0aae
 
-# IFAA - from OOS 11.2.8.8
-system_ext/priv-app/IFAAService/IFAAService.apk|8c8baca2cf6fcfdf1e727436fb6b9b2d888fed75
-vendor/lib64/vendor.oneplus.hardware.ifaa@2.0.so|9ccac456a9f05cce8aa339965bec673f06395467
-vendor/bin/hw/vendor.oneplus.hardware.ifaa@2.0-service|8c715bc2dd0fcae870050abc8bdaee99043d554f
-vendor/etc/init/vendor.oneplus.hardware.ifaa@2.0-service.rc|17f485f5523372cc627503f36f1e84348233b777
-
-# IFAA firmware - OOS
-odm/vendor/firmware/alipay.b00:system/etc/firmware/alipay.b00|f0895ed437acdc45514201af6151f214cd9bd2db
-odm/vendor/firmware/alipay.b01:system/etc/firmware/alipay.b01|a6e7573f7f29b4ef71abef166de88b99f1f9bf8b
-odm/vendor/firmware/alipay.b02:system/etc/firmware/alipay.b02|420f72802bdefb2fcf28dee8d94d33c3c9389ba8
-odm/vendor/firmware/alipay.b03:system/etc/firmware/alipay.b03|6e56de9b34f1a81be96db1d792cfa741d000b6e4
-odm/vendor/firmware/alipay.b04:system/etc/firmware/alipay.b04|266bc579c505fdb58a3b82353ea7cb5ad6ba728c
-odm/vendor/firmware/alipay.b05:system/etc/firmware/alipay.b05|8b75d6113c871f7422cf5c67b6289f4f9bc4fa05
-odm/vendor/firmware/alipay.b06:system/etc/firmware/alipay.b06|674cadc0fca0437d4c57af117b8c97d70fa02d8d
-odm/vendor/firmware/alipay.b07:system/etc/firmware/alipay.b07|281a2f237bff872b7b63ab5e878d9b3aa0c52be4
-odm/vendor/firmware/alipay.mdt:system/etc/firmware/alipay.mdt|e21ee060b1f52d74edb4b12b1ac401e3ffde567f
-
 # IMS
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
@@ -858,6 +836,15 @@ vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
 # QCRIL
+odm/lib64/lib-virtual-modem-protos.so
+odm/lib64/libcommcenterfw.so
+odm/lib64/libcommcenterutils.so
+odm/lib64/libdmtpclient.so
+odm/lib64/libdmtp-protos-lite.so
+odm/lib64/vendor.oplus.hardware.appradio@1.0.so
+odm/lib64/vendor.oplus.hardware.communicationcenter_compat@1.0.so
+odm/lib64/vendor.oplus.hardware.ims@1.0.so
+odm/lib64/vendor.oplus.hardware.radio@1.0.so
 vendor/bin/hw/qcrild
 vendor/bin/qtigetprop
 vendor/bin/qtisetprop
@@ -941,6 +928,7 @@ vendor/etc/init/qmipriod.rc
 vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/lib/libidl.so
 vendor/lib/libmdmdetect.so
+vendor/lib/liboemnvbk_img_helper.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqmi.so
 vendor/lib/libqmi_cci.so
@@ -958,6 +946,7 @@ vendor/lib/libsmemlog.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib64/libidl.so
 vendor/lib64/libmdmdetect.so
+vendor/lib64/liboemnvbk_img_helper.so
 vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqmi.so
 vendor/lib64/libqmi_cci.so
@@ -988,6 +977,7 @@ vendor/lib64/libQSEEComAPI.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
 vendor/lib64/librpmb.so
+vendor/lib64/libsecureui.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
@@ -1024,14 +1014,14 @@ vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
 # SecureMSM (GPQESE)
-vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
-vendor/bin/hw/vendor.qti.secure_element@1.2-service
-vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
-vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
-vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
-vendor/lib64/android.hardware.secure_element@1.0-impl.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/vendor.qti.esepowermanager@1.1.so
+odm/bin/hw/vendor.qti.esepowermanager@1.1-service
+odm/bin/hw/vendor.qti.secure_element@1.2-service
+odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc
+odm/etc/init/vendor.qti.secure_element@1.2-service.rc
+odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
+odm/lib64/android.hardware.secure_element@1.0-impl.so
+odm/lib64/vendor.qti.esepowermanager@1.0.so
+odm/lib64/vendor.qti.esepowermanager@1.1.so
 
 # SecureMSM
 vendor/bin/hdcp1prov
@@ -2214,7 +2204,7 @@ odm/firmware/wentai24k_rtp.bin|00ea6a6ed43a0619cef4a48c538450a2893821df
 # VPP
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
-vendor/etc/init/vppservice.rc
+vendor/etc/init/vppservice_osie_sr.rc
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
@@ -2225,6 +2215,7 @@ vendor/lib64/libvpptestutils.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
+vendor/lib64/vendor.qti.hardware.vpp@1.4.so
 
 # Widevine DRM - OOS
 odm/bin/hw/android.hardware.drm@1.3-service.widevine|6c18708482d4e09553bd6cf3bcfaf10e9c4bb4a4
